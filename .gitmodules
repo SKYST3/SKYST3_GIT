@@ -1,0 +1,27 @@
+[submodule "매직포스/skyst"]
+	path = 매직포스/skyst
+	url = https://github.com/wff826/skyst
+[submodule "노란머리블랙버드/yellow-headed-blackbird-backend"]
+	path = 노란머리블랙버드/yellow-headed-blackbird-backend
+	url = https://github.com/ZirAjs/yellow-headed-blackbird-backend
+[submodule "Swaggypants/to-u_backend"]
+	path = Swaggypants/to-u_backend
+	url = https://github.com/73510/to-u_backend
+[submodule "고른햇살참치김밥오이빼고/ToYou_backend"]
+	path = 고른햇살참치김밥오이빼고/ToYou_backend
+	url = https://github.com/SunshineTunaKimbap/ToYou_backend
+[submodule "와플대학/SKYST_waffleuniv_client"]
+	path = 와플대학/SKYST_waffleuniv_client
+	url = https://github.com/B0neh3ad/SKYST_waffleuniv_client
+[submodule "핫식스받으러왔습니다/team_12"]
+	path = 핫식스받으러왔습니다/team_12
+	url = https://github.com/SKYST3/team_12
+[submodule "라이온키잉/skyst-hackathon"]
+	path = 라이온키잉/skyst-hackathon
+	url = https://github.com/eric-jy-park/skyst-hackathon
+[submodule "읭윙/skyst"]
+	path = 읭윙/skyst
+	url = https://github.com/SKYST-uing-wing/skyst
+[submodule "TryCatch/Backend"]
+	path = TryCatch/Backend
+	url = https://github.com/2025-SKYST/Backend
