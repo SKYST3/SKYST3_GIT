@@ -1,0 +1,10 @@
+{
+  "base": {
+    "title": "Starry Night"
+  },
+  "signin": {
+    "title": "Sign in to your account",
+    "naver": "Sign in with Naver",
+    "google": "Sign in with Google"
+  }
+}

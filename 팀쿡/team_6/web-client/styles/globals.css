@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.background-reservation {
+    background-image: url("/images/bg-reservation.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.background-reservation-alt {
+    background-image: url("/images/bg-reservation-alt.png");
+    background-size: cover;
+    background-position: center;
+}
+
+.background-home {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    background-image: url("/images/bg-home.png");
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+    z-index: 0;
+}
+
+.info-title-text {
+    background: conic-gradient(from 13deg at 3.09% 122.11%, rgba(255, 255, 255, 0.90) 0deg, rgba(137, 137, 137, 0.90) 360deg);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-family: "Pretendard Variable";
+    font-size: 120px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 128px;
+}

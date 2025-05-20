@@ -1,0 +1,26 @@
+# macOS
+.DS_Store
+
+# node
+node_modules/
+npm-debug.log
+yarn.lock
+
+# Python
+__pycache__/
+*.pyc
+
+# 빌드 결과물
+dist/
+build/
+
+# 스크립트
+add_copies.sh
+add_real_copies.sh
+add_submodules.sh
+remove_double_copies.sh
+remove_wrong_copies.sh
+
+# 기타
+*.log
+.env 

@@ -1,0 +1,1 @@
+docker exec -it starrynight-db bash -c 'psql -U starrynight -d starrynight'

@@ -1,0 +1,157 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FCBF49; /* 전체 배경색 */
+}
+input {
+    border: none;
+    outline: none;
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    line-height: 22px;
+    color: #003049;
+}
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+
+/* Start Page */
+.start-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #FCBF49;
+  }
+  
+  /* Game Name Frame */
+  .game-name-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 193px 200px;
+    gap: 10px;
+    width: 1440px;
+    height: 672px;
+  }
+  
+  /* Game Name Text */
+  .game-name-text {
+    font-family: 'Norican', cursive;
+    font-size: 200px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000;
+  }
+  
+  /* Room Enter Frame */
+  .room-enter-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0 400px;
+    gap: 10px;
+    width: 1440px;
+    height: 134px;
+  }
+  
+  /* Room Code Frame */
+  .room-code-frame {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 0 30px;
+    gap: 100px;
+    width: 640px;
+    height: 134px;
+    background: #EAE2B7;
+    border: 8px solid #003049;
+    border-radius: 60px;
+  }
+  
+  /* Pre Room Code Input */
+  .pre-room-code-text {
+    width: 348px;
+    height: 134px;
+    font-family: 'Comic Sans MS';
+    font-size: 96px;
+    line-height: 134px;
+    color: rgba(0, 48, 73, 0.5);
+    background: transparent;
+    border: none;
+    outline: none;
+    text-align: center;
+  }
+  
+  /* Room Enter Button */
+  .room-enter-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-end;
+    padding: 20px 0 20px 30px;
+    gap: 10px;
+    width: 134px;
+    height: 134px;
+    cursor: pointer;
+  }
+  
+  /* Room Enter Arrow Image */
+  .room-enter-arrow {
+    box-sizing: border-box;
+    width: 104px;
+    height: 94px;
+    object-fit: contain;
+  }
+  
+  /* Room Frame */
+  .room-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 70px 400px;
+    gap: 10px;
+    width: 1440px;
+    height: 218px;
+  }
+  
+  /* Make Room Button */
+  .make-room-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 17px 0;
+    gap: 10px;
+    width: 640px;
+    height: 78px;
+    background: #F77F00;
+    border: 5px solid #003049;
+    box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+    cursor: pointer;
+  }
+  
+  /* Make Room Text */
+  .make-room-text {
+    width: 640px;
+    height: 56px;
+    font-family: 'Comic Sans MS';
+    font-size: 40px;
+    line-height: 56px;
+    color: #003049;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+  }
+  

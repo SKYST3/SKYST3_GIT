@@ -1,0 +1,64 @@
+@import 'tailwindcss';
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+div {
+  @apply font-['Inter'];
+}
+h1 {
+  @apply font-['Inter'];
+  @apply text-3xl font-semibold;
+}
+h2 {
+  @apply font-['Inter'];
+  @apply text-2xl font-semibold;
+}
+
+.textInput {
+  @apply border border-gray-300 rounded-lg p-2;
+}
+
+.button {
+  @apply font-['Inter'];
+  @apply bg-[#584D4D] text-white py-2 px-4 rounded-lg cursor-pointer;
+}
+
+.buttonMinor {
+  @apply text-gray-400 cursor-pointer;
+}
+
+.errorMsg {
+  @apply bg-red-400 text-white font-bold p-4 text-sm;
+}
+
+.fade-in {
+  opacity: 1;
+  animation: fadeIn ease-in-out 1s;
+}
+
+.fade-out {
+  opacity: 0;
+  animation: fadeOut ease-in-out 1s;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}

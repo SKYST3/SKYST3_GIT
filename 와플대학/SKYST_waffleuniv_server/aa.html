@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>STOMP WebSocket Testing</title>
+    <!-- Include SockJS and STOMP client libraries -->
+    <script src="https://cdn.jsdelivr.net/npm/sockjs-client@1/dist/sockjs.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/stomp-websocket@2.3.4-next/lib/stomp.min.js"></script>
+    <script>
+        let stompClient = null;
+
+        function connectWebSocket() {
+            const serverUrl = document.getElementById("wsUrl").value;
+            const socket = new SockJS(serverUrl);
+            stompClient = Stomp.over(socket);
+
+            stompClient.connect({}, function(frame) {
+                console.log('Connected: ' + frame);
+                alert("STOMP connection established.");
+
+                // Subscribe to a topic
+                stompClient.subscribe('/topic/room/1', function(response) {
+                    const message = JSON.parse(response.body);
+                    console.log("Message received:", message);
+                    const messages = document.getElementById("messages");
+                    const messageElement = document.createElement("div");
+                    messageElement.textContent = JSON.stringify(message);
+                    messages.appendChild(messageElement);
+                });
+            }, function(error) {
+                console.error("STOMP error:", error);
+                alert("STOMP connection error: " + error);
+            });
+        }
+
+        function sendMessage() {
+            const message = document.getElementById("message").value;
+            const sourceUrl = document.getElementById("sourceurl").value;
+            const token = document.getElementById("token").value;
+            if (stompClient && stompClient.connected) {
+                // Create headers object with Authorization
+                const headers = {
+                    "Authorization": "Bearer " + token, // Function to get your auth token
+                    "Content-Type": "application/json"
+                };
+
+                // Send to your application endpoint with headers
+                stompClient.send("/app/room/1/songrequest", headers, JSON.stringify({
+                    title: "Song Title",
+                    artist: "Artist Name",
+                    sourceUrl: sourceUrl,
+                    comment: message,
+                }));
+
+                console.log("Message sent with auth:", message);
+            } else {
+                alert("STOMP is not connected.");
+            }
+        }
+
+        function sendHeart() {
+            const token = document.getElementById("token").value;
+            if (stompClient && stompClient.connected) {
+                // Create headers object with Authorization
+                const headers = {
+                    "Authorization": "Bearer " + token, // Function to get your auth token
+                    "Content-Type": "application/json"
+                };
+
+                // Send to your application endpoint with headers
+                stompClient.send("/app/room/1/reaction", headers, JSON.stringify({
+                    name: "heart",
+                }));
+            } else {
+                alert("STOMP is not connected.");
+            }
+        }
+
+        function sendThumbsup() {
+            const token = document.getElementById("token").value;
+            if (stompClient && stompClient.connected) {
+                // Create headers object with Authorization
+                const headers = {
+                    "Authorization": "Bearer " + token, // Function to get your auth token
+                    "Content-Type": "application/json"
+                };
+
+                // Send to your application endpoint with headers
+                stompClient.send("/app/room/1/reaction", headers, JSON.stringify({
+                    name: "thumb",
+                }));
+            } else {
+                alert("STOMP is not connected.");
+            }
+        }
+
+        function closeWebSocket() {
+            if (stompClient) {
+                stompClient.disconnect();
+                alert("STOMP connection closed.");
+            } else {
+                alert("STOMP is not connected.");
+            }
+        }
+    </script>
+</head>
+<body>
+<h1>STOMP WebSocket Testing</h1>
+
+<h2>Connect to WebSocket</h2>
+<label for="wsUrl">WebSocket URL:</label>
+<input type="text" id="wsUrl" placeholder="http://localhost:8080/ws" value="http://localhost:8080/ws" required>
+<button onclick="connectWebSocket()">Connect</button>
+
+<h2>Send Message</h2>
+<label for="sourceurl">Source URL:</label>
+<input type="text" id="sourceurl" placeholder="Type your message here">
+<label for="message">Message:</label>
+<input type="text" id="message" placeholder="Type your message here">
+<label for="token">token:</label>
+<input type="text" id="token" placeholder="Type your token here">
+<button onclick="sendMessage()">Send</button>
+
+<button onclick="sendHeart()">Send heart</button>
+<button onclick="sendThumbsup()">Send thumbsup</button>
+
+
+<h2>Close Connection</h2>
+<button onclick="closeWebSocket()">Close WebSocket</button>
+
+<h2>Received Messages</h2>
+<div id="messages" style="border: 1px solid #ccc; padding: 10px; height: 200px; overflow-y: scroll;">
+    <!-- Messages will appear here -->
+</div>
+</body>
+</html>

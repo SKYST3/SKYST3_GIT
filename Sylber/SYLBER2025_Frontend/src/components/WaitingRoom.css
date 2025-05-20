@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Norican&display=swap');
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FCBF49; /* 전체 배경색 */
+}
+/* Room Host Page */
+.room-host-page {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    background: #FCBF49;
+  }
+  
+  .room-sub-frames {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 50px;
+    gap: 50px;
+    width: 1440px;
+    height: 200px;
+  }
+  
+  .back-to-start-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    background: #D62828;
+    border: 6px solid #003049;
+    border-radius: 30px;
+  }
+  
+  .back-to-start-text {
+    width: 240px;
+    height: 50px;
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #003049;
+  }
+  
+  .room-game-logo-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+    width: 640px;
+    height: 141px;
+  }
+  
+  .room-game-logo-text {
+    width: 640px;
+    height: 141px;
+    font-family: 'Norican';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 100px;
+    line-height: 141px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }
+  
+  .room-members-frame {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 30px;
+    gap: 10px;
+    background: #F77F00;
+    border: 6px solid #003049;
+    border-radius: 30px;
+  }
+  
+  .room-members-text{
+    height: 50px;
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 50px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #003049;
+  }
+  
+  .room-main-frames {
+    width: 1440px;
+    height: 824px;
+    display : grid;
+    grid-template-columns: 1fr 2fr;
+    grid-template-areas: "player-frame waiting-room-code-frame";
+    grid-gap: 0px;
+    position: 0;
+  }
+  
+  .player-frame {
+    grid-column: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 45px;
+    gap: 30px;
+    width: 480px;
+    height: 824px;
+    text-align: center;
+  }
+  
+  .player-container-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 30px;
+    gap: 30px;
+    width: 480px;
+    height: 759px;
+    background: rgba(214, 40, 40, 0.5);
+    border-radius: 0 50px 50px 0;
+  }
+  
+  .player-text-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0;
+    gap: 10px;
+    width: 420px;
+    height: 58px;
+  }
+  
+  .player-text {
+    width: 138px;
+    height: 56px;
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 56px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #003049;
+  }
+  
+  .player-list-frame {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 0;
+    gap: 20px;
+    width: 420px;
+    height: 621px;
+  }
+  
+  .player-item-frame {
+    display: flex;
+    justify-content: center;
+    width: 420px;
+    height: 60.12px;
+    background: #EAE2B7;
+    border-radius: 25px;
+    align-items: center;
+  }
+  
+  .waiting-room-code-frame {
+    grid-column: 3;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px 50px 0;
+    gap: 10px;
+    width: 960px;
+    height: 824px;
+  }
+  
+  .room-code-container-frame {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 50px 50px;
+    gap: 33px;
+    width: 860px;
+    height: 594px;
+    background: rgba(214, 40, 40, 0.5);
+    border-radius: 50px;
+  }
+  
+  .room-code-text-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1px 0;
+    gap: 10px;
+    width: 760px;
+  }
+  
+  .room-code-text {
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 40px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #003049;
+  }
+  
+  .room-code-real-text-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 760px;
+    height: 433px;
+    background: #EAE2B7;
+    border-radius: 40px;
+  }
+  .room-code-real-text{
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-size: 100px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #003049;
+  }
+  
+  .game-start-button-frame {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px 0 45px;
+    gap: 50px;
+    width: 860px;
+    height: 200px;
+  }
+  
+  .game-start-button {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+    gap: 10px;
+    width: 860px;
+    height: 130px;
+    background: #F77F00;
+    border: 6px solid #003049;
+    border-radius: 30px;
+  }
+  
+  .game-start-text {
+    width: 379px;
+    height: 89px;
+    font-family: 'Comic Sans MS';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 64px;
+    line-height: 89px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #000000;
+  }

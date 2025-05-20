@@ -1,0 +1,9 @@
+@import 'tailwind.css';
+
+@font-face {
+  font-family: 'Miwon';
+  src: url('/fonts/미원Miwon.otf') format('opentype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}

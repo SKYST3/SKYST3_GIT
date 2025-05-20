@@ -1,0 +1,99 @@
+@import "tailwindcss";
+@import "./palette.css" layer(theme);
+
+@custom-variant dark (&:is(.dark *));
+
+:root {
+  --background: var(--color-white);
+  --foreground: var(--color-cool-gray-1400);
+  --card: var(--color-background);
+  --card-foreground: var(--color-foreground);
+  --popover: var(--color-background);
+  --popover-foreground: var(--color-foreground);
+  --primary: var(--color-accent-teal-700);
+  --primary-foreground: var(--color-white);
+  --secondary: var(--color-cool-gray-100);
+  --secondary-foreground: var(--color-cool-gray-1400);
+  --tertiary-foreground: var(--color-gray-300);
+  --muted: var(--color-cool-gray-100);
+  --muted-foreground: var(--color-cool-gray-1000);
+  --accent: var(--color-cool-gray-100);
+  --accent-foreground: var(--color-black);
+  --destructive: var(--color-accent-red-600);
+  --destructive-foreground: var(--color-white);
+  --border: var(--color-cool-gray-400);
+  --input: var(--color-cool-gray-400);
+  --ring: var(--color-cool-gray-600);
+  --radius: 0.625rem;
+}
+
+@theme inline {
+  --font-sans: "Pretendard", sans-serif;
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-popover: var(--popover);
+  --color-popover-foreground: var(--popover-foreground);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-muted: var(--muted);
+  --color-muted-foreground: var(--muted-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+  --color-destructive: var(--destructive);
+  --color-destructive-foreground: var(--destructive-foreground);
+  --color-destructive-default: var(--destructive-default);
+  --color-destructive-accessible: var(--destructive-accessible);
+  --color-border: var(--border);
+  --color-input: var(--input);
+  --color-ring: var(--ring);
+  --radius-sm: calc(var(--radius) - 4px);
+  --radius-md: calc(var(--radius) - 2px);
+  --radius-lg: var(--radius);
+  --radius-xl: calc(var(--radius) + 4px);
+  --color-primary-blue-100: var(--color-blue-100);
+  --color-primary-blue-200: var(--color-blue-200);
+  --color-primary-blue-300: var(--color-blue-300);
+  --color-primary-blue-400: var(--color-blue-400);
+  --color-primary-blue-500: var(--color-blue-500);
+  --color-primary-blue-600: var(--color-blue-600);
+  --color-primary-blue-700: var(--color-blue-700);
+  --color-primary-blue-800: var(--color-blue-800);
+  --color-primary-blue-900: var(--color-blue-900);
+  --color-primary-blue-1000: var(--color-blue-1000);
+  --color-primary-blue-1100: var(--color-blue-1100);
+  --color-primary-green-100: var(--color-green-100);
+  --color-primary-green-200: var(--color-green-200);
+  --color-primary-green-300: var(--color-green-300);
+  --color-primary-green-400: var(--color-green-400);
+  --color-primary-green-500: var(--color-green-500);
+  --color-primary-green-600: var(--color-green-600);
+  --color-primary-green-700: var(--color-green-700);
+  --color-primary-green-800: var(--color-green-800);
+  --color-primary-green-900: var(--color-green-900);
+  --color-primary-green-1000: var(--color-green-1000);
+  --color-primary-green-1100: var(--color-green-1100);
+  --color-primary-teal-100: var(--color-accent-teal-100);
+  --color-primary-teal-200: var(--color-accent-teal-200);
+  --color-primary-teal-300: var(--color-accent-teal-300);
+  --color-primary-teal-400: var(--color-accent-teal-400);
+  --color-primary-teal-500: var(--color-accent-teal-500);
+  --color-primary-teal-600: var(--color-accent-teal-600);
+  --color-primary-teal-700: var(--color-accent-teal-700);
+  --color-primary-teal-800: var(--color-accent-teal-800);
+  --color-primary-teal-900: var(--color-accent-teal-900);
+  --color-primary-teal-1000: var(--color-accent-teal-1000);
+  --color-primary-teal-1100: var(--color-accent-teal-1100);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground;
+  }
+}

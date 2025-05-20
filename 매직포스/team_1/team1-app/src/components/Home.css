@@ -1,0 +1,49 @@
+.home-container {
+  padding: 20px;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.home-title {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+  text-align: left;
+}
+
+.home-subtitle {
+  font-size: 16px;
+  color: #666;
+  margin-bottom: 30px;
+  text-align: left;
+}
+
+.menu-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+  padding: 10px;
+}
+
+.menu-card {
+  background: white;
+  border-radius: 10px;
+  padding: 30px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  min-height: 120px;
+  transition: all 0.2s;
+}
+
+.menu-card:hover {
+  transform: scale(1.02);
+  background-color: #C966EC;
+  color: white;
+  box-shadow: 0 4px 8px rgba(201, 102, 236, 0.2);
+} 

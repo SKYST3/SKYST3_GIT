@@ -1,0 +1,212 @@
+html, body, #root {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    background-color: #FCBF49; /* 전체 배경색 */
+}
+
+input {
+    border: none;
+    outline: none;
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    line-height: 22px;
+    color: #003049;
+}
+
+/* Login Page */
+.Login-Page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    background: #FCBF49;
+}
+
+/* Login Container */
+.Login-Container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    width: 540px;
+    height: max-content;
+    background: #EAE2B7;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 24px;
+}
+
+/* Sign in Part */
+.Sign-in-Part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px 20px;
+    gap: 109px;
+    width: 440px;
+    height: 515px;
+    margin: 0 auto;
+}
+
+/* Welcome Text Frame */
+.Welcome-Text-Frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 54px;
+    margin: 0 auto;
+}
+
+.Welcome-Text {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 54px;
+    text-align: center;
+    color: #003049;
+}
+
+/* Id and Password */
+.Id-and-Password {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    gap: 30px;
+    width: 400px;
+    height: 172px;
+    margin: 0 auto;
+}
+
+.Sign-in-Id-Form,
+.Sign-in-Password-Form {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 19px 20px;
+    gap: 10px;
+    width: 400px;
+    height: 60px;
+    background: #FFFFFF;
+    border: 1px solid #D0CECE;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border-radius: 10px;
+    margin: 0 auto;
+    box-sizing: border-box;
+}
+
+.Id-Text,
+.Password-Text {
+    font-family: 'Noto Sans';
+    font-size: 16px;
+    line-height: 22px;
+    color: rgba(0, 48, 73, 1);
+    display: flex;
+    align-items: center;
+}
+
+/* Sign In Button Frame */
+.Sign-In-Button-Frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    width: 400px;
+    height: 61px;
+    margin: 0 auto;
+}
+
+.Sign-In-Button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 14px 60px;
+    gap: 10px;
+    width: 300px;
+    height: 61px;
+    background: #F77F00;
+    border-radius: 30px;
+    cursor: pointer;
+    margin: 0 auto;
+    align-self: center;
+}
+
+.Sign-In-Text {
+    font-family: 'Noto Sans';
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    display: flex;
+    align-items: center;
+}
+
+/* Separator Line */
+.Login-Container-Seperate-Line {
+    width: 440px;
+    height: 0 px;
+    margin: 0 auto;
+    border: 1px solid #003049;
+}
+
+/* Forgot Password and Sign Up Part */
+.Forgot-Password-and-Sign-up-Part {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 50px;
+    gap: 10px;
+    width: 440px;
+    height: max-content;
+    margin: 0 auto;
+}
+
+.Forgot-Password-link-Box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 340px;
+    height: 30px;
+    margin: 0 auto;
+}
+
+.Forgot-Password-link-Text {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    line-height: 20px;
+    color: #0042F7;
+    text-align: center;
+}
+
+.Sign-up-link-Frame {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 340px;
+    height: 20px;
+    margin: 0 auto;
+}
+
+.Dont-have-an-account-Text {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    line-height: 20px;
+    color: #000000;
+    text-align: right;
+}
+
+.Sign-up-link-Text {
+    font-family: 'Noto Sans';
+    font-size: 15px;
+    line-height: 20px;
+    color: #0042F7;
+    text-align: center;
+}

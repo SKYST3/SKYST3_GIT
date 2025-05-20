@@ -1,0 +1,84 @@
+[submodule "매직포스/skyst"]
+	path = 매직포스/skyst
+	url = https://github.com/wff826/skyst
+[submodule "노란머리블랙버드/yellow-headed-blackbird-backend"]
+	path = 노란머리블랙버드/yellow-headed-blackbird-backend
+	url = https://github.com/ZirAjs/yellow-headed-blackbird-backend
+[submodule "Swaggypants/to-u_backend"]
+	path = Swaggypants/to-u_backend
+	url = https://github.com/73510/to-u_backend
+[submodule "고른햇살참치김밥오이빼고/ToYou_backend"]
+	path = 고른햇살참치김밥오이빼고/ToYou_backend
+	url = https://github.com/SunshineTunaKimbap/ToYou_backend
+[submodule "와플대학/SKYST_waffleuniv_client"]
+	path = 와플대학/SKYST_waffleuniv_client
+	url = https://github.com/B0neh3ad/SKYST_waffleuniv_client
+[submodule "핫식스받으러왔습니다/team_12"]
+	path = 핫식스받으러왔습니다/team_12
+	url = https://github.com/SKYST3/team_12
+[submodule "라이온키잉/skyst-hackathon"]
+	path = 라이온키잉/skyst-hackathon
+	url = https://github.com/eric-jy-park/skyst-hackathon
+[submodule "읭윙/skyst"]
+	path = 읭윙/skyst
+	url = https://github.com/SKYST-uing-wing/skyst
+[submodule "TryCatch/Backend"]
+	path = TryCatch/Backend
+	url = https://github.com/2025-SKYST/Backend
+[submodule "매직포스/team_1"]
+	path = 매직포스/team_1
+	url = https://github.com/SKYST3/team_1
+[submodule "매직포스/SKYST-SERVER"]
+	path = 매직포스/SKYST-SERVER
+	url = https://github.com/Hoyoung027/SKYST-SERVER
+[submodule "세담/SKYST_hackerton_JS"]
+	path = 세담/SKYST_hackerton_JS
+	url = https://github.com/nhkim06/SKYST_hackerton_JS
+[submodule "노란머리블랙버드/yellow-headed-blackbird-frontend"]
+	path = 노란머리블랙버드/yellow-headed-blackbird-frontend
+	url = https://github.com/alexander050211/yellow-headed-blackbird-frontend
+[submodule "Swaggypants/to-u_frontend"]
+	path = Swaggypants/to-u_frontend
+	url = https://github.com/73510/to-u_frontend
+[submodule "Cracked/cracked"]
+	path = Cracked/cracked
+	url = https://github.com/pineldeer/cracked
+[submodule "팀쿡/team_6"]
+	path = 팀쿡/team_6
+	url = https://github.com/SKYST3/team_6
+[submodule "고른햇살참치김밥오이빼고/ToYou_frontend"]
+	path = 고른햇살참치김밥오이빼고/ToYou_frontend
+	url = https://github.com/SunshineTunaKimbap/ToYou_frontend
+[submodule "와플대학/SKYST_waffleuniv_server"]
+	path = 와플대학/SKYST_waffleuniv_server
+	url = https://github.com/gs18113/SKYST_waffleuniv_server
+[submodule "이세계에선해커인내가현실에선개발자/team_11"]
+	path = 이세계에선해커인내가현실에선개발자/team_11
+	url = https://github.com/SKYST3/team_11
+[submodule "삐약이/s2u"]
+	path = 삐약이/s2u
+	url = https://github.com/bbiyagi-skyst/s2u
+[submodule "연세우유생크림와플/team_16"]
+	path = 연세우유생크림와플/team_16
+	url = https://github.com/SKYST3/team_16
+[submodule "연세우유생크림와플/yonsei-milk-waffle-web"]
+	path = 연세우유생크림와플/yonsei-milk-waffle-web
+	url = https://github.com/hwanheejung/yonsei-milk-waffle-web
+[submodule "라이온키잉/lionkiing-front"]
+	path = 라이온키잉/lionkiing-front
+	url = https://github.com/yyj0917/lionkiing-front
+[submodule "NUBZUKI/SKYST"]
+	path = NUBZUKI/SKYST
+	url = https://github.com/xistoh162108/SKYST
+[submodule "codecraft/team_19"]
+	path = codecraft/team_19
+	url = https://github.com/SKYST3/team_19
+[submodule "TryCatch/Frontend"]
+	path = TryCatch/Frontend
+	url = https://github.com/2025-SKYST/Frontend
+[submodule "Sylber/SYLBER2025_Back"]
+	path = Sylber/SYLBER2025_Back
+	url = https://github.com/carsella0909/SYLBER2025_Back
+[submodule "Sylber/SYLBER2025_Frontend"]
+	path = Sylber/SYLBER2025_Frontend
+	url = https://github.com/hisohn1006/SYLBER2025_Frontend

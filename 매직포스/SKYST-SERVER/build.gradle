@@ -1,0 +1,72 @@
+plugins {
+	id 'java'
+	id 'org.springframework.boot' version '3.4.5'
+	id 'io.spring.dependency-management' version '1.1.7'
+}
+
+group = 'skyst'
+version = '0.0.1-SNAPSHOT'
+
+java {
+	toolchain {
+		languageVersion = JavaLanguageVersion.of(17)
+	}
+}
+
+repositories {
+	mavenCentral()
+}
+
+dependencyManagement {
+	imports {
+		mavenBom "com.google.cloud:google-cloud-bom:0.202.0"
+	}
+}
+
+dependencies {
+	implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
+	implementation 'org.springframework.boot:spring-boot-starter-security'
+	implementation 'org.springframework.boot:spring-boot-starter-web'
+
+	compileOnly 'org.projectlombok:lombok'
+
+	runtimeOnly 'com.mysql:mysql-connector-j'
+	annotationProcessor 'org.projectlombok:lombok'
+	testImplementation 'org.springframework.boot:spring-boot-starter-test'
+	testImplementation 'org.springframework.security:spring-security-test'
+	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	// Login
+	developmentOnly 'org.springframework.boot:spring-boot-devtools'
+	testImplementation 'io.projectreactor:reactor-test'
+	implementation 'org.springframework.boot:spring-boot-starter-oauth2-client'
+	implementation 'org.springframework.boot:spring-boot-starter-thymeleaf'
+
+	// JWT
+	implementation 'io.jsonwebtoken:jjwt-api:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-impl:0.11.5'
+	runtimeOnly 'io.jsonwebtoken:jjwt-jackson:0.11.5'
+	implementation 'org.json:json:20210307'
+	implementation 'org.jsoup:jsoup:1.16.1'
+	implementation 'org.springframework.boot:spring-boot-starter-batch'
+
+	// Redis
+	implementation 'org.springframework.boot:spring-boot-starter-data-redis'
+
+	// AWS SDK v2 (S3)
+	implementation 'software.amazon.awssdk:s3:2.20.0'
+
+	// Google Cloud Speech-to-Text
+	implementation('com.google.cloud:google-cloud-speech') {
+		exclude group: 'com.google.guava', module: 'listenablefuture'
+	}
+	implementation 'com.google.protobuf:protobuf-java'
+
+	// chatGPT
+	implementation 'org.springframework.boot:spring-boot-starter-webflux'
+	implementation 'com.fasterxml.jackson.core:jackson-databind'
+}
+
+tasks.named('test') {
+	useJUnitPlatform()
+}
